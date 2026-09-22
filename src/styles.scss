@@ -1,3 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
+// hier auch standard zeug
 
-@import '../puplic/assets/styles/_main.scss';
+@use '../public/assets/styles/main' as All;

@@ -1,4 +1,4 @@
-@use './fonts.scss';
-@use './standard.scss';
-@use './style.scss';
-// puplic/assets/styles/
+@forward './fonts';
+@forward './standard';
+@forward './style';
+// ../assets/styles/

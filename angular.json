@@ -30,8 +30,7 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
-              "puplic/assets/styles/_main.scss"
+              "src/styles.scss"
             ]
           },
           "configurations": {
