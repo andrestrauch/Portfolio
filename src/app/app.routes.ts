@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { Mainpage } from './shared/mainpage/mainpage';
-import { Inprint } from './shared/inprint/inprint';
+import { Mainpage } from './shared/Mainpage/mainpage';
+import { Inprint } from './shared/Inprint/inprint';
 
 export const routes: Routes = [
     {path:"",
