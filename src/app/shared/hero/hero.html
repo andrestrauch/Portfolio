@@ -1,20 +1,20 @@
 <section class="hero">
   <div class="content-wrapper">
     <section class="hero-img">
-      <p>Bild</p>
-      <img src="../../../../public/assets/img/hero_circle.png" alt="Kreis" />
+      <!-- <p>Bild</p> -->
+      <img [src]="'assets/img/circle.png'" alt="Kreis" />
     </section>
     <section class="right-side">
       <section class="logo-icons">
         <section class="logo-name">
-          <img src="" alt="AS Logo" />
+          <img [src]="'assets/icon/logo.png'" alt="Logo" />
           <p>A.Strauch</p>
           <p class="blue">developer</p>
         </section>
         <section class="icons">
-          <img src="" alt="Email" />
-          <img src="../../../../public/assets/icon/github.png" alt="GitHub" />
-          <img src="" alt="LinkedIn" />
+          <img [src]="'assets/icon/mail.svg'" alt="Email" />
+          <img [src]="'assets/icon/github.png'" alt="GitHub" />
+          <img [src]="'assets/icon/linkedIn.png'" alt="LinkedIn" />
         </section>
       </section>
       <section class="name-section">
@@ -22,7 +22,9 @@
         <h2>FRONTEND DEVELOPER</h2>
       </section>
       <section class="scroll-arrow">
-        <button>Scroll Button Icon</button>
+        <button>
+          <img [src]="'assets/icon/arrowDown.png'" alt="Arrow Down" />
+        </button>
       </section>
     </section>
   </div>
