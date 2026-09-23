@@ -7,6 +7,16 @@
   // background-color: yellow;
   gap: 20px;
 
+  .content-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(252, 252, 252, 0.1);
+  }
+
   .why-me {
     width: 100%;
     display: flex;
@@ -88,7 +98,7 @@
       gap: 8px;
 
       .comment {
-        color: black;
+        // color: black;
       }
     }
   }
