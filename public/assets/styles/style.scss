@@ -7,3 +7,12 @@ body {
   background-color: rgba(38, 46, 52, 1);
   color: white;
 }
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(135, 206, 250, 0.7);
+  border: 1px soild black;
+}
