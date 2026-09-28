@@ -46,30 +46,83 @@
   </section>
 
   <section class="my-projects">
-    <div class="content-wrapper">
-      <h2>My Projects</h2>
+    <h2>My Projects</h2>
 
-      <section class="project-nav">
-        <h3>1. El Pollo Loco</h3>
-        <h3>2. Join</h3>
-        <h3>3. Ideas</h3>
-      </section>
+    <section class="project-nav">
+      <h3 class="p1">1. El Pollo Loco</h3>
+      <h3 class="p2">2. Join</h3>
+      <h3 class="p3">3. Ideas</h3>
+    </section>
 
-      <section class="project-content">
-        <section class="text">Text</section>
-        <section class="projects">Projekt</section>
-      </section>
-    </div>
+    <section class="project-content">
+      <div class="project-wrapper">
+        <section class="text">
+          <div class="about">
+            <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
+            <h3>About the project</h3>
+          </div>
+          <p>
+            This App is a Slack Clone App. It revolutionizes team communication and collaboration
+            with its intuitive interface, real-time messaging, and robust channel organization.
+          </p>
+
+          <div class="about">
+            <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
+            <h3>How I have organized my work process</h3>
+          </div>
+          <p>
+            How do you keep your code clean and maintainable? Have you broken the project down into
+            reusable modules or components? Focus on documentation, naming files, variables, classes
+            and testing.
+          </p>
+
+          <div class="about">
+            <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
+            <h3>My work experience</h3>
+          </div>
+          <p>
+            How many people were in the team and what was your role? Describe your tasks in 1-2
+            sentences, for example: login form, dashboard or chat functionality. What technologies
+            did you use? It is nice to mention good teamwork and cooperation.
+          </p>
+        </section>
+        <section class="projects">
+          <h4>Technologies</h4>
+          <div class="tech-icons">
+            <img [src]="'assets/icon/js2.png'" alt="JS" />
+            <img [src]="'assets/icon/html2.png'" alt="HTML" />
+            <img [src]="'assets/icon/css2.png'" alt="CSS" />
+          </div>
+
+          <!-- Screenshot vom Game -->
+          <img class="game-img" [src]="'assets/img/el_pollo_loco.png'" alt="El Pollo Loco" />
+
+          <div class="project-btn">
+            <button class="test-btn btn">Live Test</button>
+            <button class="github-btn btn">GitHub</button>
+          </div>
+        </section>
+      </div>
+    </section>
   </section>
 
   <section class="my-comments">
     <div class="content-wrapper">
-      <h2>Need a Teamplayer?</h2>
+      <h2>Need a teamplayer? Here’s what my colleagues say about me</h2>
 
       <section class="comments">
-        <article class="comment">Comment1</article>
-        <article class="comment">Comment2</article>
-        <article class="comment">Comment3</article>
+        <article class="comment">
+          <img [src]="'assets/img/grey_circle.png'" alt="Grauer Kreis" />
+          <p>Comment1</p>
+        </article>
+        <article class="comment">
+          <img [src]="'assets/img/grey_circle.png'" alt="Grauer Kreis" />
+          <p>Comment2</p>
+        </article>
+        <article class="comment">
+          <img [src]="'assets/img/grey_circle.png'" alt="Grauer Kreis" />
+          <p>Comment3</p>
+        </article>
       </section>
     </div>
   </section>
@@ -80,10 +133,20 @@
         <h2>Contact me</h2>
 
         <section class="info">
-          <p>Text</p>
+          <p class="info-text">
+            Encourage people to contact you and describe what role you are interested in. Show that
+            you will add value to their projects through your work. Example: Feel free to get in
+            touch with job offers or opportunities such as: ...
+          </p>
           <section class="contact">
-            <p>Email</p>
-            <p>Telefon</p>
+            <div class="email-info">
+              <img [src]="'assets/icon/email.png'" alt="Email Icon" />
+              <p>E-Mail: andrestrauch@gmx.de</p>
+            </div>
+            <div class="tel-info">
+              <img [src]="'assets/icon/tel.png'" alt="Tel Icon" />
+              <p>Tel: 0174 000 000 00</p>
+            </div>
           </section>
         </section>
 
@@ -97,17 +160,25 @@
             <p>Your Email</p>
             <input type="text" />
           </section>
-        </section>
 
-        <p>Your Message</p>
-        <input type="text" />
+          <section class="msg-input">
+            <p>Your Message</p>
+            <input type="text" />
+          </section>
+        </section>
 
         <section class="accept-check">
-          <p>Checkbox</p>
-          <p>Accept privacy Policy</p>
+          <img [src]="'assets/icon/checkbox.png'" alt="Checkbox" />
+          <p>
+            I´ve read the
+            <span>privacy policy</span>
+            and agree to the processing of my data as outlined.
+          </p>
         </section>
 
-        <button>Send</button>
+        <div class="send-btn">
+          <button>Send</button>
+        </div>
       </section>
 
       <section class="scroll-section">
