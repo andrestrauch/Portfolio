@@ -472,14 +472,27 @@
           font-weight: 400;
           line-height: 120%;
 
-          span {
+          span,
+          a {
             color: rgba(137, 188, 217, 1);
+            text-decoration: none;
+          }
+          a:hover {
+            color: black;
+            background-color: rgba(137, 188, 217, 1);
+            border-radius: 50px;
+            text-decoration: underline;
           }
         }
 
         img {
           width: 24px;
           height: 24px;
+        }
+        img:hover {
+          background-color: white;
+          border-radius: 50%;
+          overflow: hidden;
         }
       }
 
