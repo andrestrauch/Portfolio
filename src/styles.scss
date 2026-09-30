@@ -2,3 +2,7 @@
 // hier auch standard zeug
 
 @use '../public/assets/styles/main' as All;
+
+body::-webkit-scrollbar {
+  display: none;
+}

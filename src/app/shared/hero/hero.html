@@ -1,5 +1,5 @@
 <section class="hero">
-  <div class="content-wrapper">
+  <div id="heroSection" class="content-wrapper">
     <section class="hero-img">
       <!-- <p>Bild</p> -->
       <img [src]="'assets/img/circle.png'" alt="Kreis" />
@@ -12,9 +12,17 @@
           <p class="blue">developer</p>
         </section>
         <section class="icons">
-          <img [src]="'assets/icon/mail.svg'" alt="Email" />
-          <img [src]="'assets/icon/github.png'" alt="GitHub" />
-          <img [src]="'assets/icon/linkedIn.png'" alt="LinkedIn" />
+          <a href="#contactSection">
+            <img [src]="'assets/icon/mail.svg'" alt="Email" />
+          </a>
+
+          <a href="https://github.com/andrestrauch" target="_blank">
+            <img [src]="'assets/icon/github.png'" alt="GitHub" />
+          </a>
+
+          <a href="https://linkedin.com" target="_blank">
+            <img [src]="'assets/icon/linkedIn.png'" alt="LinkedIn" />
+          </a>
         </section>
       </section>
       <section class="name-section">
@@ -23,7 +31,9 @@
       </section>
       <section class="scroll-arrow">
         <button>
-          <img [src]="'assets/icon/arrowDown.png'" alt="Arrow Down" />
+          <a href="#whyMeSection">
+            <img [src]="'assets/icon/arrowDown.png'" alt="Arrow Down" />
+          </a>
         </button>
       </section>
     </section>

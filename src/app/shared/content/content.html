@@ -1,7 +1,7 @@
 <section class="content">
   <!-- <p>content works!</p> -->
 
-  <section class="why-me">
+  <section id="whyMeSection" class="why-me">
     <div class="content-wrapper">
       <h2>Why Me</h2>
       <section class="why-text">
@@ -16,14 +16,16 @@
             nice to have.
           </p>
           <button>
-            <img [src]="'assets/icon/talkbtn.png'" alt="Talk Button" />
+            <a href="#contactSection">
+              <img [src]="'assets/icon/talkbtn.png'" alt="Talk Button" />
+            </a>
           </button>
         </section>
       </section>
     </div>
   </section>
 
-  <section class="my-skills">
+  <section id="skillSection" class="my-skills">
     <div class="content-wrapper">
       <h2>My Skills</h2>
       <section class="skill-section">
@@ -45,7 +47,7 @@
     </div>
   </section>
 
-  <section class="my-projects">
+  <section id="projectSection" class="my-projects">
     <h2>My Projects</h2>
 
     <section class="project-nav">
@@ -54,7 +56,7 @@
       <h3 class="p3">3. Ideas</h3>
     </section>
 
-    <section class="project-content">
+    <section id="" class="project-content">
       <div class="project-wrapper">
         <section class="text">
           <div class="about">
@@ -127,7 +129,7 @@
     </div>
   </section>
 
-  <section class="my-contact">
+  <section id="contactSection" class="my-contact">
     <div class="content-wrapper">
       <section class="contact-content">
         <h2>Contact me</h2>
@@ -183,7 +185,9 @@
 
       <section class="scroll-section">
         <button>
-          <img [src]="'assets/icon/arrowUp.png'" alt="Arrow Down" />
+          <a href="#heroSection">
+            <img [src]="'assets/icon/arrowUp.png'" alt="Arrow Down" />
+          </a>
         </button>
       </section>
     </div>
