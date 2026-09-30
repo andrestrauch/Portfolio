@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { Inprint } from './inprint';
+import { Imprint } from './imprint';
 
-describe('Inprint', () => {
-  let component: Inprint;
-  let fixture: ComponentFixture<Inprint>;
+describe('Imprint', () => {
+  let component: Imprint;
+  let fixture: ComponentFixture<Imprint>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Inprint],
+      imports: [Imprint],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Inprint);
+    fixture = TestBed.createComponent(Imprint);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
