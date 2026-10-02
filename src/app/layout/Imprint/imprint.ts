@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { Header } from '../Header/header';
+import { Header } from '../../shared/Header/header';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

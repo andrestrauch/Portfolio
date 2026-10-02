@@ -3,6 +3,7 @@ import { Footer } from './shared/Footer/footer';
 import { RouterOutlet } from '@angular/router';
 
 
+
 @Component({
   imports: [RouterOutlet,Footer],
   selector: 'app-root',
@@ -11,4 +12,6 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('portfolio');
+  
 }
+

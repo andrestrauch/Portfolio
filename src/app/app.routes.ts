@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { Mainpage } from './shared/Mainpage/mainpage';
-import { Imprint } from './shared/Imprint/imprint';
+import { Mainpage } from './layout/Mainpage/mainpage';
+import { Imprint } from './layout/Imprint/imprint';
 
 
 export const routes: Routes = [

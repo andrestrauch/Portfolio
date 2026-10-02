@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Hero } from '../Hero/hero';
-import { Header } from '../Header/header';
+import { Header } from '../../shared/Header/header';
 import { Content } from '../Content/content';
 
 @Component({
