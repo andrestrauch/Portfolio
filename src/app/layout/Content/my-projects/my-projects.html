@@ -1,0 +1,81 @@
+<!-- <p>my-projects works!</p> -->
+
+<section id="projectSection" class="my-projects">
+  <h2>{{ 'content-projects' | translate }}</h2>
+
+  <div ngTabs>
+    <div ngTabList selectionMode="follow" selectedTab="elPolloLoco">
+      <div ngTab value="elPolloLoco">1. El Pollo Loco</div>
+      <div ngTab value="join">2. Join</div>
+      <div ngTab value="ideas">{{ 'content-projectIdeas' | translate }}</div>
+    </div>
+    <div class="sliding-window">
+      <div ngTabPanel [preserveContent]="true" value="elPolloLoco">
+        <ng-template ngTabContent>
+          <section class="project-content">
+            <div class="project-wrapper">
+              <section class="text">
+                <div class="about">
+                  <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
+                  <h3>{{ 'content-projectsAbout' | translate }}</h3>
+                </div>
+                <p>{{ 'content-projectsAboutText' | translate }}</p>
+
+                <div class="about">
+                  <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
+                  <h3>{{ 'content-projectsOrganized' | translate }}</h3>
+                </div>
+                <p>{{ 'content-projectsOrganizedText' | translate }}</p>
+
+                <div class="about">
+                  <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
+                  <h3>{{ 'content-projectsExp' | translate }}</h3>
+                </div>
+                <p>{{ 'content-projectsExp-Text' | translate }}</p>
+              </section>
+              <section class="projects">
+                <h4>Technologies</h4>
+                <div class="tech-icons">
+                  <img [src]="'assets/icon/js2.png'" alt="JS" />
+                  <img [src]="'assets/icon/html2.png'" alt="HTML" />
+                  <img [src]="'assets/icon/css2.png'" alt="CSS" />
+                </div>
+
+                <img class="game-img" [src]="'assets/img/el_pollo_loco.png'" alt="El Pollo Loco" />
+
+                <div class="project-btn">
+                  <button class="test-btn btn">
+                    <a
+                      href="https://andrestrauch.developerakademie.net/el_pollo_loco/index.html"
+                      target="_blank"
+                      >Live Test</a
+                    >
+                  </button>
+                  <button class="github-btn btn">
+                    <a href="https://github.com/andrestrauch/El-Pollo-Loco" target="_blank"
+                      >GitHub</a
+                    >
+                  </button>
+                </div>
+              </section>
+            </div>
+          </section>
+        </ng-template>
+      </div>
+      <div ngTabPanel [preserveContent]="true" value="join">
+        <ng-template ngTabContent>
+          <section class="project-content">
+            <div class="project-wrapper">Daten folgen</div>
+          </section>
+        </ng-template>
+      </div>
+      <div ngTabPanel [preserveContent]="true" value="ideas">
+        <ng-template ngTabContent>
+          <section class="project-content">
+            <div class="project-wrapper">Daten folgen</div>
+          </section>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</section>

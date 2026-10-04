@@ -1,0 +1,64 @@
+<!-- <p>my-contact works!</p> -->
+<section id="contactSection" class="my-contact">
+  <div class="content-wrapper">
+    <section class="contact-content">
+      <h2>{{ 'content-contact' | translate }}</h2>
+
+      <section class="info">
+        <p class="info-text">{{ 'content-contactTxt' | translate }}</p>
+        <section class="contact">
+          <div class="email-info">
+            <img [src]="'assets/icon/email.png'" alt="Email Icon" />
+            <p>E-Mail: andrestrauch@gmx.de</p>
+          </div>
+          <div class="tel-info">
+            <img [src]="'assets/icon/tel.png'" alt="Tel Icon" />
+            <p>Tel: 0174 000 000 00</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="inputs">
+        <section class="name-input">
+          <p>{{ 'content-contactName' | translate }}</p>
+          <input type="text" />
+        </section>
+
+        <section class="email-input">
+          <p>{{ 'content-contactEmail' | translate }}</p>
+          <input type="text" />
+        </section>
+
+        <section class="msg-input">
+          <p>{{ 'content-contactMsg' | translate }}</p>
+          <input type="text" />
+        </section>
+      </section>
+
+      <section class="accept-check">
+        <img [src]="'assets/icon/checkbox.png'" alt="Checkbox" />
+        <p>
+          {{ 'content-contactCheckTxt1' | translate }}
+          <span>
+            <a routerLink="imprint" role="link">
+              {{ 'content-contactCheckSpan' | translate }}</a
+            ></span
+          >
+          {{ 'content-contactCheckTxt2' | translate }}
+        </p>
+      </section>
+
+      <div class="send-btn">
+        <button>Send</button>
+      </div>
+    </section>
+
+    <section class="scroll-section">
+      <button>
+        <a href="#heroSection">
+          <img [src]="'assets/icon/arrowUp.png'" alt="Arrow Down" />
+        </a>
+      </button>
+    </section>
+  </div>
+</section>

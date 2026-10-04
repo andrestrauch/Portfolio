@@ -1,0 +1,24 @@
+<!-- <p>why-me works!</p> -->
+
+<section id="whyMeSection" class="why-me">
+  <div class="content-wrapper">
+    <h2>{{ 'content-whyMe' | translate }}</h2>
+    <section class="why-text">
+      <section class="location">
+        <img [src]="'assets/icon/location.png'" alt="Location Icon" />
+        <p>
+          <span class="blue">
+            {{ 'content-im' | translate }}
+          </span>
+          {{ 'content-located' | translate }}
+        </p>
+      </section>
+      <section class="why">
+        <p>{{ 'content-locationText' | translate }}</p>
+        <a href="#contactSection">
+          <img [src]="'assets/icon/talkbtn.png'" alt="Talk Button" />
+        </a>
+      </section>
+    </section>
+  </div>
+</section>

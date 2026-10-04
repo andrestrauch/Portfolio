@@ -1,0 +1,215 @@
+.my-projects {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 104px;
+
+  :host {
+    // font-family: var(--inter-font);
+    display: flex;
+    justify-content: center;
+  }
+  [ngTabs] {
+    overflow: hidden;
+    width: 100%;
+    // max-width: 1440px;
+    border-radius: 0.5rem;
+    // border: 1px solid black;
+  }
+  [ngTabList] {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    position: relative;
+    // border-bottom: 1px solid black;
+  }
+  [ngTab] {
+    flex: 1;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    color: rgba(137, 188, 217, 1);
+    width: 100%;
+    max-width: 1440px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 120%;
+    padding: 28px;
+  }
+  // [ngTab][aria-selected='false']:focus {
+  //   outline-offset: -8px;
+  //   border-radius: 0.7rem;
+  //   outline: 2px solid black;
+  // }
+  [ngTab]:hover {
+    color: white;
+  }
+  [ngTab][aria-selected='true'] {
+    color: white;
+    background-color: rgba(45, 56, 63, 1);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .sliding-window {
+    width: 300%;
+    display: flex;
+    transition: all 0.2s ease-in-out;
+  }
+  [ngTabList]:has([ngTab]:nth-child(1)[aria-selected='true']) ~ .sliding-window {
+    transform: translateX(0%);
+  }
+  [ngTabList]:has([ngTab]:nth-child(2)[aria-selected='true']) ~ .sliding-window {
+    transform: translateX(-33.333%);
+  }
+  [ngTabList]:has([ngTab]:nth-child(3)[aria-selected='true']) ~ .sliding-window {
+    transform: translateX(-66.666%);
+  }
+  [ngTabPanel] {
+    display: grid;
+    place-items: center;
+    // padding: 1rem;
+    min-height: 100px;
+    flex: 1;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  [ngTabPanel]:focus {
+    border-radius: 30px;
+  }
+
+  h2 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 120%;
+    padding-bottom: 80px;
+    color: rgba(137, 188, 217, 1);
+  }
+
+  .project-content {
+    width: 100%;
+    height: 548px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(45, 56, 63, 1);
+    padding-top: 40px;
+    gap: 56px;
+
+    .project-wrapper {
+      width: 100%;
+      max-width: 1440px;
+      display: flex;
+      justify-content: center;
+      // background-color: red;
+    }
+
+    .text {
+      width: 40%;
+      .about {
+        display: flex;
+        align-items: center;
+        padding-bottom: 16px;
+        gap: 21px;
+
+        img {
+          width: 29px;
+          height: 26px;
+        }
+
+        h3 {
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 120%;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 120%;
+        padding-left: 50px;
+        padding-bottom: 36px;
+      }
+    }
+
+    .projects {
+      width: 40%;
+      // background-color: rgba(0, 0, 0, 0.244);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // padding-top: 40px;
+
+      h4 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 120%;
+        padding-bottom: 12px;
+      }
+
+      .tech-icons {
+        display: flex;
+        gap: 32px;
+        padding-bottom: 16px;
+      }
+
+      .game-img {
+        width: 453px;
+        height: 312px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .project-btn {
+        padding-top: 34px;
+        display: flex;
+        gap: 40px;
+
+        .btn {
+          border-radius: 30px;
+          padding: 10px;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 120%;
+        }
+
+        .test-btn {
+          width: 132px;
+          height: 48px;
+          background-color: rgba(137, 188, 217, 1);
+          border: 1px solid gba(38, 46, 52, 1);
+
+          a {
+            color: rgba(38, 46, 52, 1);
+            text-decoration: none;
+          }
+        }
+
+        .test-btn:hover {
+          background-color: white;
+        }
+
+        .github-btn {
+          width: 120px;
+          height: 48px;
+          background-color: rgba(38, 46, 52, 1);
+          border: 1px solid rgba(137, 188, 217, 1);
+
+          a {
+            color: rgba(137, 188, 217, 1);
+            text-decoration: none;
+          }
+        }
+
+        .github-btn:hover {
+          border-radius: 30px;
+          background-color: rgba(248, 245, 236, 0.12);
+        }
+      }
+    }
+  }
+}
