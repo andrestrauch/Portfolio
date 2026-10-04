@@ -183,11 +183,11 @@
       line-height: 120%;
       padding: 28px;
     }
-    [ngTab][aria-selected='false']:focus {
-      // outline-offset: -8px;
-      // border-radius: 0.7rem;
-      // outline: 2px solid black;
-    }
+    // [ngTab][aria-selected='false']:focus {
+    //   outline-offset: -8px;
+    //   border-radius: 0.7rem;
+    //   outline: 2px solid black;
+    // }
     [ngTab]:hover {
       color: white;
     }
@@ -326,8 +326,12 @@
             width: 132px;
             height: 48px;
             background-color: rgba(137, 188, 217, 1);
-            color: rgba(38, 46, 52, 1);
             border: 1px solid gba(38, 46, 52, 1);
+
+            a {
+              color: rgba(38, 46, 52, 1);
+              text-decoration: none;
+            }
           }
 
           .test-btn:hover {
@@ -338,8 +342,12 @@
             width: 120px;
             height: 48px;
             background-color: rgba(38, 46, 52, 1);
-            color: rgba(137, 188, 217, 1);
             border: 1px solid rgba(137, 188, 217, 1);
+
+            a {
+              color: rgba(137, 188, 217, 1);
+              text-decoration: none;
+            }
           }
 
           .github-btn:hover {
