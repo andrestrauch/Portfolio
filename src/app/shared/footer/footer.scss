@@ -54,5 +54,17 @@
       width: 30px;
       height: 30px;
     }
+
+    .email-icon:hover {
+      background: url('../../../../public/assets/icon/mail_white.png');
+    }
+
+    .github-icon:hover {
+      background: url('../../../../public/assets/icon/github_white.png');
+    }
+
+    .linkedin-icon:hover {
+      background: url('../../../../public/assets/icon/linkedin_white.png');
+    }
   }
 }
