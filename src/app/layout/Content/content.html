@@ -50,62 +50,87 @@
   <section id="projectSection" class="my-projects">
     <h2>My Projects</h2>
 
-    <section class="project-nav">
-      <h3 class="p1">1. El Pollo Loco</h3>
-      <h3 class="p2">2. Join</h3>
-      <h3 class="p3">3. Ideas</h3>
-    </section>
-
-    <section id="" class="project-content">
-      <div class="project-wrapper">
-        <section class="text">
-          <div class="about">
-            <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
-            <h3>About the project</h3>
-          </div>
-          <p>
-            This App is a Slack Clone App. It revolutionizes team communication and collaboration
-            with its intuitive interface, real-time messaging, and robust channel organization.
-          </p>
-
-          <div class="about">
-            <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
-            <h3>How I have organized my work process</h3>
-          </div>
-          <p>
-            How do you keep your code clean and maintainable? Have you broken the project down into
-            reusable modules or components? Focus on documentation, naming files, variables, classes
-            and testing.
-          </p>
-
-          <div class="about">
-            <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
-            <h3>My work experience</h3>
-          </div>
-          <p>
-            How many people were in the team and what was your role? Describe your tasks in 1-2
-            sentences, for example: login form, dashboard or chat functionality. What technologies
-            did you use? It is nice to mention good teamwork and cooperation.
-          </p>
-        </section>
-        <section class="projects">
-          <h4>Technologies</h4>
-          <div class="tech-icons">
-            <img [src]="'assets/icon/js2.png'" alt="JS" />
-            <img [src]="'assets/icon/html2.png'" alt="HTML" />
-            <img [src]="'assets/icon/css2.png'" alt="CSS" />
-          </div>
-
-          <!-- Screenshot vom Game -->
-          <img class="game-img" [src]="'assets/img/el_pollo_loco.png'" alt="El Pollo Loco" />
-
-          <div class="project-btn">
-            <button class="test-btn btn">Live Test</button>
-            <button class="github-btn btn">GitHub</button>
-          </div>
-        </section>
+    <div ngTabs>
+      <div ngTabList selectionMode="follow" selectedTab="elPolloLoco">
+        <div ngTab value="elPolloLoco">1. El Pollo Loco</div>
+        <div ngTab value="join">2. Join</div>
+        <div ngTab value="ideas">3. Ideas</div>
       </div>
-    </section>
+      <div class="sliding-window">
+        <div ngTabPanel [preserveContent]="true" value="elPolloLoco">
+          <ng-template ngTabContent>
+            <section class="project-content">
+              <div class="project-wrapper">
+                <section class="text">
+                  <div class="about">
+                    <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
+                    <h3>About the project</h3>
+                  </div>
+                  <p>
+                    This App is a Slack Clone App. It revolutionizes team communication and
+                    collaboration with its intuitive interface, real-time messaging, and robust
+                    channel organization.
+                  </p>
+
+                  <div class="about">
+                    <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
+                    <h3>How I have organized my work process</h3>
+                  </div>
+                  <p>
+                    How do you keep your code clean and maintainable? Have you broken the project
+                    down into reusable modules or components? Focus on documentation, naming files,
+                    variables, classes and testing.
+                  </p>
+
+                  <div class="about">
+                    <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
+                    <h3>My work experience</h3>
+                  </div>
+                  <p>
+                    How many people were in the team and what was your role? Describe your tasks in
+                    1-2 sentences, for example: login form, dashboard or chat functionality. What
+                    technologies did you use? It is nice to mention good teamwork and cooperation.
+                  </p>
+                </section>
+                <section class="projects">
+                  <h4>Technologies</h4>
+                  <div class="tech-icons">
+                    <img [src]="'assets/icon/js2.png'" alt="JS" />
+                    <img [src]="'assets/icon/html2.png'" alt="HTML" />
+                    <img [src]="'assets/icon/css2.png'" alt="CSS" />
+                  </div>
+
+                  <img
+                    class="game-img"
+                    [src]="'assets/img/el_pollo_loco.png'"
+                    alt="El Pollo Loco"
+                  />
+
+                  <div class="project-btn">
+                    <button class="test-btn btn">Live Test</button>
+                    <button class="github-btn btn">GitHub</button>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </ng-template>
+        </div>
+        <div ngTabPanel [preserveContent]="true" value="join">
+          <ng-template ngTabContent>
+            <section class="project-content">
+              <div class="project-wrapper">Daten folgen</div>
+            </section>
+          </ng-template>
+        </div>
+        <div ngTabPanel [preserveContent]="true" value="ideas">
+          <ng-template ngTabContent>
+            <section class="project-content">
+              <div class="project-wrapper">Daten folgen</div>
+            </section>
+          </ng-template>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="my-comments">
