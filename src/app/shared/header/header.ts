@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 
 export class Header {
-  static lang:string = "en";
+  lang:string = "en";
 
   // setLang(){
   //   if(Header.lang == "en"){

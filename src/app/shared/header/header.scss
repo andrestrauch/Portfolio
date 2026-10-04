@@ -55,19 +55,42 @@
 
   .lang-btn {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     display: flex;
+    border: none;
 
     span {
       color: black;
       display: flex;
-      gap: 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      background-color: rgba(137, 188, 217, 1);
+      border: none;
 
       p {
         font-size: 18px;
         font-weight: 400;
+        font-weight: bold;
         line-height: 120%;
+      }
+
+      .de {
+        color: black;
+      }
+
+      .en {
+        color: white;
+      }
+
+      .de:hover {
+        color: white;
+      }
+
+      .en:hover {
+        color: black;
       }
     }
 
@@ -75,9 +98,10 @@
       border: none;
       padding: 4px;
       width: 100px;
-      border-radius: 20px;
+      border-radius: 30px;
       cursor: pointer;
       position: relative;
+      background-color: rgba(137, 188, 217, 1);
     }
   }
 }
