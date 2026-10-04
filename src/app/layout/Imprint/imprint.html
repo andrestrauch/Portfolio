@@ -2,7 +2,7 @@
   <app-header></app-header>
 
   <section class="imprint-content">
-    <h3>Portfolio von: <span>Andre Strauch</span></h3>
+    <h3>{{ 'imprint-h3' | translate }} <span>Andre Strauch</span></h3>
     <br />
     <p>
       Nobiskrüger Allee 85 <br />
@@ -10,15 +10,20 @@
       E-Mail: andrestrauch@gmx.de<br /><br />
     </p>
 
-    <h4><span>Datenschutzerklärung</span></h4>
+    <h4>
+      <span>{{ 'imprint-h4' | translate }}</span>
+    </h4>
     <p>
-      Die im Kontaktformular genutzten Daten werden nur für die persönliche Kontaktaufnahme
-      genutzt<br />
-      Und werden nicht anderweitig gespeichert oder weiter gereicht
+      {{ 'imprint-txt1' | translate }}
+      <br />
+      {{ 'imprint-txt2' | translate }}
     </p>
     <br />
 
-    <h4>Weiterbildung zum <span>Fullstack Entwickler</span> bei der</h4>
+    <h4>
+      {{ 'imprint-h5' | translate }} <span>{{ 'imprint-h5Span' | translate }}</span
+      >{{ 'imprint-h5Txt' | translate }}
+    </h4>
     <br />
     <p>
       <span>Developer Akademie </span>GmbH <br />

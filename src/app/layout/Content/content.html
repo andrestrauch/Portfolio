@@ -3,23 +3,22 @@
 
   <section id="whyMeSection" class="why-me">
     <div class="content-wrapper">
-      <h2>Why Me</h2>
+      <h2>{{ 'content-whyMe' | translate }}</h2>
       <section class="why-text">
         <section class="location">
           <img [src]="'assets/icon/location.png'" alt="Location Icon" />
-          <p><span class="blue">I am</span> located in Rendsburg</p>
+          <p>
+            <span class="blue">
+              {{ 'content-im' | translate }}
+            </span>
+            {{ 'content-located' | translate }}
+          </p>
         </section>
         <section class="why">
-          <p>
-            Why are you passionate about coding? You can include some key traits like: analytical
-            thinking, creativity, persistence and collaboration. A problem-solving mindset is always
-            nice to have.
-          </p>
-          <button>
-            <a href="#contactSection">
-              <img [src]="'assets/icon/talkbtn.png'" alt="Talk Button" />
-            </a>
-          </button>
+          <p>{{ 'content-locationText' | translate }}</p>
+          <a href="#contactSection">
+            <img [src]="'assets/icon/talkbtn.png'" alt="Talk Button" />
+          </a>
         </section>
       </section>
     </div>
@@ -27,7 +26,7 @@
 
   <section id="skillSection" class="my-skills">
     <div class="content-wrapper">
-      <h2>My Skills</h2>
+      <h2>{{ 'content-skills' | translate }}</h2>
       <section class="skill-section">
         <section class="skills">
           <!-- Skill Kacheln -->
@@ -48,13 +47,13 @@
   </section>
 
   <section id="projectSection" class="my-projects">
-    <h2>My Projects</h2>
+    <h2>{{ 'content-projects' | translate }}</h2>
 
     <div ngTabs>
       <div ngTabList selectionMode="follow" selectedTab="elPolloLoco">
         <div ngTab value="elPolloLoco">1. El Pollo Loco</div>
         <div ngTab value="join">2. Join</div>
-        <div ngTab value="ideas">3. Ideas</div>
+        <div ngTab value="ideas">{{ 'content-projectIdeas' | translate }}</div>
       </div>
       <div class="sliding-window">
         <div ngTabPanel [preserveContent]="true" value="elPolloLoco">
@@ -64,33 +63,21 @@
                 <section class="text">
                   <div class="about">
                     <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
-                    <h3>About the project</h3>
+                    <h3>{{ 'content-projectsAbout' | translate }}</h3>
                   </div>
-                  <p>
-                    This App is a Slack Clone App. It revolutionizes team communication and
-                    collaboration with its intuitive interface, real-time messaging, and robust
-                    channel organization.
-                  </p>
+                  <p>{{ 'content-projectsAboutText' | translate }}</p>
 
                   <div class="about">
                     <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
-                    <h3>How I have organized my work process</h3>
+                    <h3>{{ 'content-projectsOrganized' | translate }}</h3>
                   </div>
-                  <p>
-                    How do you keep your code clean and maintainable? Have you broken the project
-                    down into reusable modules or components? Focus on documentation, naming files,
-                    variables, classes and testing.
-                  </p>
+                  <p>{{ 'content-projectsOrganizedText' | translate }}</p>
 
                   <div class="about">
                     <img [src]="'assets/icon/small_circle.png'" alt="Blauer Kreis" />
-                    <h3>My work experience</h3>
+                    <h3>{{ 'content-projectsExp' | translate }}</h3>
                   </div>
-                  <p>
-                    How many people were in the team and what was your role? Describe your tasks in
-                    1-2 sentences, for example: login form, dashboard or chat functionality. What
-                    technologies did you use? It is nice to mention good teamwork and cooperation.
-                  </p>
+                  <p>{{ 'content-projectsExp-Text' | translate }}</p>
                 </section>
                 <section class="projects">
                   <h4>Technologies</h4>
@@ -135,7 +122,7 @@
 
   <section class="my-comments">
     <div class="content-wrapper">
-      <h2>Need a teamplayer? Here’s what my colleagues say about me</h2>
+      <h2>{{ 'content-commtary' | translate }}</h2>
 
       <section class="comments">
         <article class="comment">
@@ -157,14 +144,10 @@
   <section id="contactSection" class="my-contact">
     <div class="content-wrapper">
       <section class="contact-content">
-        <h2>Contact me</h2>
+        <h2>{{ 'content-contact' | translate }}</h2>
 
         <section class="info">
-          <p class="info-text">
-            Encourage people to contact you and describe what role you are interested in. Show that
-            you will add value to their projects through your work. Example: Feel free to get in
-            touch with job offers or opportunities such as: ...
-          </p>
+          <p class="info-text">{{ 'content-contactTxt' | translate }}</p>
           <section class="contact">
             <div class="email-info">
               <img [src]="'assets/icon/email.png'" alt="Email Icon" />
@@ -179,17 +162,17 @@
 
         <section class="inputs">
           <section class="name-input">
-            <p>Your Name</p>
+            <p>{{ 'content-contactName' | translate }}</p>
             <input type="text" />
           </section>
 
           <section class="email-input">
-            <p>Your Email</p>
+            <p>{{ 'content-contactEmail' | translate }}</p>
             <input type="text" />
           </section>
 
           <section class="msg-input">
-            <p>Your Message</p>
+            <p>{{ 'content-contactMsg' | translate }}</p>
             <input type="text" />
           </section>
         </section>
@@ -197,8 +180,13 @@
         <section class="accept-check">
           <img [src]="'assets/icon/checkbox.png'" alt="Checkbox" />
           <p>
-            I´ve read the<span> <a routerLink="imprint" role="link"> privacy policy </a></span>
-            and agree to the processing of my data as outlined.
+            {{ 'content-contactCheckTxt1' | translate }}
+            <span>
+              <a routerLink="imprint" role="link">
+                {{ 'content-contactCheckSpan' | translate }}</a
+              ></span
+            >
+            {{ 'content-contactCheckTxt2' | translate }}
           </p>
         </section>
 

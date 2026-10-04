@@ -8,25 +8,25 @@
     </section>
     <section class="nav">
       <a href="#whyMeSection">
-        <p>Why Me</p>
+        <p>{{ 'header-whyMe' | translate }}</p>
       </a>
       <a href="#skillSection">
-        <p>Skills</p>
+        <p>{{ 'header-skills' | translate }}</p>
       </a>
       <a href="#projectSection">
-        <p>Projects</p>
+        <p>{{ 'header-projects' | translate }}</p>
       </a>
 
       <a href="#contactSection">
-        <p>Contact</p>
+        <p>{{ 'header-contact' | translate }}</p>
       </a>
     </section>
 
     <section class="lang-btn">
       <button id="langToggle" class="mode-toggle">
         <span>
-          <p class="de">DE</p>
-          <p class="en">ENG</p>
+          <button id="deBtn" (click)="changeLanguage('de')"><p class="de">DE</p></button>
+          <button id="enBtn" (click)="changeLanguage('en')"><p class="en">ENG</p></button>
         </span>
       </button>
     </section>

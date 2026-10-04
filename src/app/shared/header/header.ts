@@ -1,36 +1,38 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
+import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
-  imports: [],
+  imports: [TranslatePipe,TranslateDirective],
   selector: 'app-header',
   styleUrl: './header.scss',
   templateUrl: './header.html',
 })
 
 export class Header {
-  lang:string = "en";
+  private translate = inject(TranslateService);
 
-  // setLang(){
-  //   if(Header.lang == "en"){
-  //     document.getElementById("langToggle")?.classList.remove(`lang-de`);
-  //     document.getElementById("langToggle")?.classList.add(`lang-en`);
-  //   }
+  ngOnInit(){
+    document.getElementById("enBtn")?.classList.add(`active`);
+  }
 
-  //   if(Header.lang == "de"){
-  //     document.getElementById("langToggle")?.classList.remove(`lang-en`);
-  //     document.getElementById("langToggle")?.classList.add(`lang-de`);
-  //   }
+  changeLanguage(language: string): void {
 
-  //   console.log(Header.lang);
-  // }
+    this.translate.use(language);
+    if(language=="de")
+    {
+      document.getElementById("enBtn")?.classList.remove(`active`);
+      document.getElementById("deBtn")?.classList.add(`active`);
+    }
 
+    if(language=="en")
+    {
+      document.getElementById("deBtn")?.classList.remove(`active`);
+      document.getElementById("enBtn")?.classList.add(`active`);
+    }
+
+  }
 }
 
-      document.getElementById('langToggle')?.addEventListener('click', function () {
-        const body = document.body;
-        const currentMode = body.getAttribute('lang');
-        body.setAttribute('lang', currentMode === 'en' ? 'de' : 'en');
-    });
 
 
   
