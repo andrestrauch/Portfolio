@@ -1,8 +1,8 @@
-import { Component, inject, signal } from '@angular/core';
-import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { Component, inject } from '@angular/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
-  imports: [TranslatePipe,TranslateDirective],
+  imports: [TranslatePipe],
   selector: 'app-header',
   styleUrl: './header.scss',
   templateUrl: './header.html',

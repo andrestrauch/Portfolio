@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
-  imports: [TranslatePipe],
+  imports: [TranslatePipe,RouterLink],
   selector: 'app-my-contact',
   styleUrl: './my-contact.scss',
   templateUrl: './my-contact.html',
